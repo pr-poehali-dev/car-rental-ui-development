@@ -37,14 +37,14 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary">ИНДЕКС ДРАЙВ</span>
+              <span className="text-2xl font-bold text-primary">IndexDrive</span>
             </a>
           </div>
 
           {/* Навигация для десктопа */}
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#promotions" className="text-sm font-medium hover:text-primary transition-colors">Акции</a>
-            <a href="#booking" className="text-sm font-medium hover:text-primary transition-colors">Бронирование</a>
+            <a href="#promotions" className="text-sm font-medium hover:text-accent transition-colors">Акции</a>
+            <a href="#booking" className="text-sm font-medium hover:text-accent transition-colors">Бронирование</a>
             <a href="/login" className="text-sm font-medium hover:text-primary transition-colors">Личный кабинет</a>
           </nav>
 
@@ -62,8 +62,8 @@ const Index = () => {
         {isMenuOpen && (
           <div className="container md:hidden py-4 bg-background border-t">
             <nav className="flex flex-col gap-4">
-              <a href="#promotions" className="text-sm font-medium hover:text-primary transition-colors">Акции</a>
-              <a href="#booking" className="text-sm font-medium hover:text-primary transition-colors">Бронирование</a>
+              <a href="#promotions" className="text-sm font-medium hover:text-accent transition-colors">Акции</a>
+              <a href="#booking" className="text-sm font-medium hover:text-accent transition-colors">Бронирование</a>
               <a href="/login" className="text-sm font-medium hover:text-primary transition-colors">Личный кабинет</a>
             </nav>
           </div>
@@ -76,9 +76,9 @@ const Index = () => {
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2070')] bg-cover bg-center opacity-60"></div>
           <div className="container relative z-10">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">На любой случай, любой автомобиль</h1>
-              <p className="text-xl mb-8">Индекс Драйв — сделаем любой автомобиль доступным и практичным для вас.</p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in text-outline">На любой случай, любой автомобиль</h1>
+              <p className="text-xl mb-8">IndexDrive — сделаем любой автомобиль доступным и практичным для вас.</p>
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
                 Забронировать автомобиль
               </Button>
             </div>
@@ -89,37 +89,37 @@ const Index = () => {
         <section className="py-16 bg-white">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Почему нам доверяют</h2>
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">Почему нам доверяют</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Более 5000 клиентов уже выбрали наш сервис для аренды автомобилей
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6 rounded-lg hover-scale">
+              <div className="text-center p-6 rounded-lg hover-scale border border-gray-100 shadow-sm">
                 <div className="bg-primary/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Быстрая подача</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Быстрая подача</h3>
                 <p className="text-gray-600">Доставка автомобиля в течение 1 часа в любую точку города</p>
               </div>
-              <div className="text-center p-6 rounded-lg hover-scale">
+              <div className="text-center p-6 rounded-lg hover-scale border border-gray-100 shadow-sm">
                 <div className="bg-primary/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Новые автомобили</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Новые автомобили</h3>
                 <p className="text-gray-600">Средний возраст автомобилей нашего автопарка — 1.5 года</p>
               </div>
-              <div className="text-center p-6 rounded-lg hover-scale">
-                <div className="bg-primary/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="text-center p-6 rounded-lg hover-scale border border-gray-100 shadow-sm">
+                <div className="bg-accent/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Удобная оплата</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Удобная оплата</h3>
                 <p className="text-gray-600">Принимаем любые карты, включая Apple Pay и Google Pay</p>
               </div>
             </div>
@@ -130,12 +130,12 @@ const Index = () => {
         <section id="booking" className="py-16 bg-gray-50">
           <div className="container">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Найти автомобиль</h2>
-              <Card>
+              <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Найти автомобиль</h2>
+              <Card className="shadow-md">
                 <CardContent className="p-6">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                     <div>
-                      <label className="block text-sm font-medium mb-2">Класс автомобиля</label>
+                      <label className="block text-sm font-medium mb-2 text-gray-700">Класс автомобиля</label>
                       <Select>
                         <SelectTrigger>
                           <SelectValue placeholder="Выберите класс" />
@@ -148,7 +148,7 @@ const Index = () => {
                       </Select>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium mb-2">Марка</label>
+                      <label className="block text-sm font-medium mb-2 text-gray-700">Марка</label>
                       <Select>
                         <SelectTrigger>
                           <SelectValue placeholder="Выберите марку" />
@@ -163,11 +163,11 @@ const Index = () => {
                       </Select>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium mb-2">Модель</label>
+                      <label className="block text-sm font-medium mb-2 text-gray-700">Модель</label>
                       <Input placeholder="Введите модель" />
                     </div>
                   </div>
-                  <Button className="w-full bg-primary" size="lg">
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" size="lg">
                     <Search className="mr-2 h-4 w-4" /> Найти автомобиль
                   </Button>
                 </CardContent>
@@ -177,12 +177,12 @@ const Index = () => {
         </section>
 
         {/* Секция новостей */}
-        <section className="py-16 bg-white">
+        <section id="promotions" className="py-16 bg-white">
           <div className="container">
-            <h2 className="text-3xl font-bold mb-12 text-center">Новости и акции</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Новости и акции</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {news.map((item) => (
-                <Card key={item.id} className="overflow-hidden transition-all hover:shadow-lg">
+                <Card key={item.id} className="overflow-hidden transition-all hover:shadow-lg border-gray-200">
                   <div className="h-48 overflow-hidden">
                     <img 
                       src={item.image} 
@@ -191,11 +191,11 @@ const Index = () => {
                     />
                   </div>
                   <CardHeader>
-                    <CardTitle>{item.title}</CardTitle>
+                    <CardTitle className="text-gray-900">{item.title}</CardTitle>
                     <CardDescription>{item.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Button variant="outline" className="w-full">Подробнее</Button>
+                    <Button variant="outline" className="w-full hover:bg-primary hover:text-white">Подробнее</Button>
                   </CardContent>
                 </Card>
               ))}
@@ -210,10 +210,10 @@ const Index = () => {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">ИНДЕКС ДРАЙВ</h3>
+              <h3 className="text-xl font-bold mb-4 text-primary">IndexDrive</h3>
               <p className="mb-4">Аренда автомобилей на любой случай</p>
               <div className="flex items-center">
-                <Phone className="h-5 w-5 mr-2" />
+                <Phone className="h-5 w-5 mr-2 text-accent" />
                 <span className="text-lg">8 (800) 111-11-11</span>
               </div>
             </div>
@@ -221,8 +221,8 @@ const Index = () => {
               <h3 className="text-lg font-semibold mb-4">Навигация</h3>
               <ul className="space-y-2">
                 <li><a href="/" className="hover:text-primary transition-colors">Главная</a></li>
-                <li><a href="#promotions" className="hover:text-primary transition-colors">Акции</a></li>
-                <li><a href="#booking" className="hover:text-primary transition-colors">Бронирование</a></li>
+                <li><a href="#promotions" className="hover:text-accent transition-colors">Акции</a></li>
+                <li><a href="#booking" className="hover:text-accent transition-colors">Бронирование</a></li>
                 <li><a href="/login" className="hover:text-primary transition-colors">Личный кабинет</a></li>
               </ul>
             </div>
@@ -237,7 +237,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p>&copy; {new Date().getFullYear()} Индекс Драйв. Все права защищены.</p>
+            <p>&copy; {new Date().getFullYear()} IndexDrive. Все права защищены.</p>
           </div>
         </div>
       </footer>
